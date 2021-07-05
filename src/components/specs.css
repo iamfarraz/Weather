@@ -1,0 +1,9 @@
+.cards{
+    display: flex;
+   flex-direction: row;
+   padding: 1em; 
+}
+.center{
+    display: flex;
+    justify-content: center;
+  }
