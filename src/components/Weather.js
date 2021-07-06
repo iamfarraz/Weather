@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import Select from 'react-select'
 import Today from "./Today"
 import "./Weather.css"
@@ -6,7 +6,7 @@ import opt from "./location";
 
 const options = []
 opt.map((cur)=>{
-  options.push({value:cur,label:cur})
+  return options.push({value:cur,label:cur})
 })
 
 export default function Weather({setloc,data}){

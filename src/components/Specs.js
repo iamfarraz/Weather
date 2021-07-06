@@ -11,16 +11,17 @@ export default function Specs({data}){
             let {weather_state_name,min_temp,
                 applicable_date,
                 max_temp,}=cur
-                if(ind==1)applicable_date="Tommorow"
+                if(ind===1)applicable_date="Tommorow"
             if(ind>=1){
-                ar.push(<Card 
+             ar.push(<Card 
+                  key={ind}
                     date={applicable_date}
                     weather={weather_state_name}
                     max_temp={max_temp.toPrecision(3)}
                     min_temp={min_temp.toPrecision(3)}
                     />) 
             }
-
+           return 0;
         } )
        ar2.push(consolidated_weather[0].wind_speed.toPrecision(2))
        ar2.push(consolidated_weather[0].air_pressure)  
